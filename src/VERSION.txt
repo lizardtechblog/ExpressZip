@@ -1,0 +1,5 @@
+# For technical support, see www.lizardtech.com/support
+Product name:    ExpressServer
+Product version: 9.0.0.3947
+Target platform: win64-vc11
+Build type:      Release

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Configuring ExpressZip" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Mail Notifications</title>
+        <link href="resources/stylesheets/webmodern.css" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2>Mail Notifications</h2>
+        <p>When an image export job finishes, ExpressZip can send mail notifications to the user that submitted the job. By default, mail notifications are disabled. To set up mail notifications, complete the following steps:</p>
+        <ol>
+            <li value="1">
+                <p>Open the following file in a text editor with administrator or root privileges:</p><pre xml:space="preserve">&lt;Express Server Installation Directory&gt;\ImageServer\Tomcat\conf\context.xml</pre>
+            </li>
+            <li value="2">
+                <p>Find the <code>&lt;Resource&gt;</code>&#160;element:</p><pre xml:space="preserve">&lt;Resource name="mail/Session" auth="Container" type="javax.mail.Session" /&gt;</pre>
+            </li>
+            <li value="3">
+                <p>Change the <code>&lt;Resource&gt;</code>&#160;element to the following line:</p><pre xml:space="preserve">&lt;Resource name="mail/Session" auth="Container" type="javax.mail.Session" mail.smtp.host="&lt;SMTP_Server_name&gt;" /&gt;</pre>
+                <p class="note" MadCap:autonum="NOTE: "><span class="autonumber"><span>NOTE: </span></span>To configure additional options for the mail server, including a custom port number, see the JavaMail documentation at the following URL:<br />https://javamail.java.net/nonav/docs/api</p>
+            </li>
+            <li value="4">Save the file.</li>
+            <li value="5">Restart Tomcat. For more information, see <a href="restarting_tomcat.htm" class="MCXref_0">Restarting Tomcat</a>.</li>
+        </ol>
+        <p class="note" MadCap:autonum="NOTE: "><span class="autonumber"><span>NOTE: </span></span>On Linux, the ExpressZip application may display an option to enter an email address for an export job even though email notifications have not been configured. This occurs when ExpressZip detects that there is an existing mail server on the machine that hosts the Express Server. In this case, ExpressZip attempts to use the existing mail server, but the mail notifications may not be delivered successfully. </p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

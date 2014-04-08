@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Configuring ExpressZip" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>The Thread Pool</title>
+        <link href="resources/stylesheets/webmodern.css" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2>The Thread Pool</h2>
+        <p>ExpressZip uses multiple threads to handle multiple job requests concurrently. By default, ExpressZip uses two threads. Each thread can run one job at a time. On machines with limited system resources, you may want to decrease the number of threads to one. </p>
+        <p class="note" MadCap:autonum="NOTE: "><span class="autonumber"><span>NOTE: </span></span>If you increase the number of threads, you risk encountering out of memory issues. The application may run out of memory because Tomcat has a fixed amount of memory assigned.</p>
+        <p>To configure the number of threads used by ExpressZip, complete the following steps:</p>
+        <ol>
+            <li value="1">
+                <p> Open the following file in a text editor with administrator or root permissions:</p><pre xml:space="preserve">&lt;Express Server Installation&#160;Directory&gt;\ImageServer\Tomcat\conf\ExpressZip.properties</pre>
+            </li>
+            <li value="2">
+                <p>Edit the value of the <code>threadpoolsize</code> line. For example, you might enter the following line:</p><pre xml:space="preserve">threadpoolsize=1</pre>
+            </li>
+            <li value="3">Save the file. </li>
+            <li value="4">Restart Tomcat. For more information, see <a href="restarting_tomcat.htm" class="MCXref_0">Restarting Tomcat</a>.</li>
+        </ol>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

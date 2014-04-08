@@ -1,0 +1,33 @@
+CMCXmlParser._FilePathToXmlStringMap.Add(
+	'Toc',
+	'<?xml version=\"1.0\" encoding=\"utf-8\"?>' +
+	'<CatapultToc Version=\"1\" DescendantCount=\"23\">' +
+	'    <TocEntry Title=\"Preface\" Link=\"/content/preface.htm\" BreakType=\"chapter\" PageNumberFormat=\"lower-roman\" StartSection=\"false\" PageNumberReset=\"continue\" ComputedResetPageLayout=\"true\" ComputedFirstTopic=\"true\" DescendantCount=\"0\" />' +
+	'    <TocEntry Title=\"Introduction\" Link=\"/content/introduction.htm\" BreakType=\"chapter\" PageNumberReset=\"reset\" PageNumberFormat=\"decimal\" ChapterNumberReset=\"reset\" ChapterNumber=\"1\" ChapterNumberFormat=\"decimal\" StartSection=\"false\" PageNumber=\"1\" SectionNumberReset=\"continue\" VolumeNumberReset=\"same\" ComputedResetPageLayout=\"true\" ComputedFirstTopic=\"false\" DescendantCount=\"4\">' +
+	'        <TocEntry Title=\"Product Overview\" Link=\"/content/product_overview.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Accessing ExpressZip\" Link=\"/content/accessing_expresszip.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"The ExpressZip User Interface\" Link=\"/content/the_expresszip_user_interface.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Security Disclaimer\" Link=\"/content/security_disclaimer.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Configuring ExpressZip\" Link=\"/content/configuring_expresszip.htm\" BreakType=\"chapter\" StartSection=\"false\" PageNumberReset=\"continue\" SectionNumberReset=\"continue\" VolumeNumberReset=\"same\" ChapterNumberReset=\"continue\" ComputedResetPageLayout=\"true\" ComputedFirstTopic=\"false\" DescendantCount=\"6\">' +
+	'        <TocEntry Title=\"Configuring ExpressZip Overview\" Link=\"/content/configuring_expresszip_overview.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"The Export Directory\" Link=\"/content/the_export_directory.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"The Base Layer\" Link=\"/content/the_base_layer.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Mail Notifications\" Link=\"/content/mail_notifications.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"The Thread Pool\" Link=\"/content/the_thread_pool.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Restarting Tomcat\" Link=\"/content/restarting_tomcat.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Using ExpressZip\" Link=\"/content/using_expresszip.htm\" BreakType=\"chapter\" StartSection=\"false\" PageNumberReset=\"continue\" ComputedResetPageLayout=\"true\" ComputedFirstTopic=\"false\" DescendantCount=\"5\">' +
+	'        <TocEntry Title=\"Using Express Zip Overview\" Link=\"/content/using_expresszip_overview.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Layer Selection\" Link=\"/content/layer_selection.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Region Selection\" Link=\"/content/region_selection.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Job Export\" Link=\"/content/job_export.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Job Status and Download\" Link=\"/content/job_status_and_download.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'    <TocEntry Title=\"Developing for ExpressZip\" Link=\"/content/developing_for_expresszip.htm\" BreakType=\"chapter\" StartSection=\"false\" PageNumberReset=\"continue\" ComputedResetPageLayout=\"true\" ComputedFirstTopic=\"false\" DescendantCount=\"3\">' +
+	'        <TocEntry Title=\"Developing for ExpressZip Overview\" Link=\"/content/developing_for_expresszip_overview.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Compiling ExpressZip\" Link=\"/content/compiling_expresszip.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'        <TocEntry Title=\"Deploying ExpressZip\" Link=\"/content/deploying_expresszip.htm\" depth=\"0\" ComputedFirstTopic=\"false\" DescendantCount=\"0\" />' +
+	'    </TocEntry>' +
+	'</CatapultToc>'
+);

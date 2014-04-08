@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using ExpressZip" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>Step 3:&#160;Job Export</title>
+        <link href="resources/stylesheets/webmodern.css" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2>Step 3:&#160;Job Export</h2>
+        <p>To submit an export job for the selected imagery, configure export options and click <b class="UItitle">Submit</b>.You can configure job details, format options, and the export resolution in the <b class="UItitle">Options</b> pane. </p>
+        <p>
+            <img src="resources/images/expresszip_step3_export_tiles_800x447.png" alt="Step 3:&#160;Export" style="width: 800;height: 447;" />
+        </p>
+        <h3>Job Details</h3>
+        <p>You can configure the following options in the <b class="UItitle">Job Details</b> table:</p>
+        <ul>
+            <li value="1"><b>Job name</b>. Required. The name that you want to assign to the image export job. The name of each job that you submit must be unique. If the job name that you select already exists in the list of jobs, ExpressZip displays an error icon next to the job name field.</li>
+            <li value="2"><b>User name</b>. Your name. When you view the status of a job in the <b>Job Manager</b>, you can sort the jobs by user name to find your jobs. </li>
+            <li value="3"><b class="UItitle">Email address</b>. Your email address. When the job finishes, ExpressZip can send you an email notification. If you do not see the email address field, ensure that you have configured mail notifications for ExpressZip. For more information, see <a href="mail_notifications.htm" class="MCXref_0">Mail Notifications</a>. </li>
+        </ul>
+        <p class="note" MadCap:autonum="NOTE: "><span class="autonumber"><span>NOTE: </span></span>If you enter an email address that is not correct or does not exist, the ExpressZip application does not send you a notification. If you want to verify that you entered the correct email address for a job, see the log file for the job in the <b class="UItitle">Job Manager</b>. </p>
+        <p>Additionally, you can view a summary of the export job in <b class="UItitle">Job Details</b>. The summary includes the number of tiles into which the image will be exported and the approximate disk space required for the exported imagery. Configure tiling options in the <b class="UItitle">Export Resolution</b> table.</p>
+        <h3>Format Options</h3>
+        <p>Enter the output format for the exported imagery. You can select one the following output formats:</p>
+        <ul>
+            <li value="1">JPEG</li>
+            <li value="2">PNG</li>
+            <li value="3">TIFF</li>
+            <li value="4">GIF</li>
+            <li value="5">BMP</li>
+        </ul>
+        <p>You can also enter the compressed file format that you want to use to package the imagery. When you download the exported imagery, you download a compressed file that bundles all the exported images. You can select the ZIP&#160;or TAR&#160;file formats.</p>
+        <h3>Export Resolution</h3>
+        <p>Use the <b class="UItitle">Export Resolution</b> table to configure the dimensions of the exported imagery and tiling options.</p>
+        <p>You can select one of the following dimensions:</p>
+        <ul>
+            <li value="1">Small. Scale the exported image to a width or height of 512 pixels.</li>
+            <li value="2">Medium. Scale the exported image to a width of 1280 pixels.</li>
+            <li value="3">Large. Scale the exported image to a width of 5000 pixels.</li>
+            <li value="4">Native resolution. Export the imagery at its native resolution.</li>
+            <li value="5">Custom. Enter a custom width, height, or ground resolution for the imagery. </li>
+        </ul>
+        <p class="note" MadCap:autonum="NOTE: "><span class="autonumber"><span>NOTE: </span></span>If you select <b>Small</b>, <b>Medium</b>, or <b>Large</b> as the <b>Export Resolution</b>, ExpressZip determines which side of the image is longer, the width or the height, then sets the longer side to a predefined pixel value. For example, if you select <b>Small</b> for a wide image, ExpressZip sets the width of the image to 512 pixels then scales the height of the image to match. </p>
+        <p>You can also enter tiling options to divide the output image into multiple tiles. If you manually enter the number of tiles that you want, the dimensions of each tile equals the dimensions that you set for the image divided by the number of tiles. For example, say you set the dimensions of an image to 1000 pixels by 1000 pixels. If you divide the image into 2 tiles by 2 tiles, the dimensions of each tile are 500 pixels by 500 pixels.</p>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

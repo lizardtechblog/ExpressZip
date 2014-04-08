@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Configuring ExpressZip" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="SkinSupport/MadCap.css" rel="stylesheet" type="text/css" /><title>The Base Layer</title>
+        <link href="resources/stylesheets/webmodern.css" rel="stylesheet" type="text/css" />
+        <script src="SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h2>The Base Layer</h2>
+        <p>The base layer provides geographic context for your imagery. It is the default image layer that appears in the <b class="UItitle">Preview</b> pane when you open ExpressZip. You can select from multiple base layers in the <b class="UItitle">Options</b> pane.</p>
+        <p> By default, the base layer is set to the MODIS imagery that ships with Express Server. To add more base layers or to change the default base layer, edit the <b>ExpressZip.properties</b> file. </p>
+        <h3>Adding a Custom Base Layer</h3>
+        <p>You can add a custom base layer to the list of available base layers in the <b class="UItitle">Options</b> pane. </p>
+        <p>To add a custom base layer, complete the following steps:</p>
+        <ol>
+            <li value="1">Open the Express Server Manager and add the custom base layer as an image catalog. </li>
+            <li value="2">Publish the image catalog. </li>
+            <li value="3">
+                <p>Open the following file in a text editor with administrator or root privileges:</p><pre xml:space="preserve">&lt;Express Server Installation Directory&gt;\ImageServer\Tomcat\conf\ExpressZip.properties</pre>
+            </li>
+            <li value="4">
+                <p>Edit the value of the <code>availableLocalBaseLayers</code> line. </p>
+                <p>For example, you might enter the following line:</p><pre xml:space="preserve">availableLocalBaseLayers=MODIS,CustomWORLD</pre>
+            </li>
+            <li value="5">Save the file.</li>
+            <li value="6">Restart Tomcat. For more information, see <a href="restarting_tomcat.htm" class="MCXref_0">Restarting Tomcat</a>.</li>
+        </ol>
+        <p class="note" MadCap:autonum="NOTE: "><span class="autonumber"><span>NOTE: </span></span>The custom base layer must be a single image catalog. When a layer is displayed as a base layer, it is excluded from the list of available layers in the <b class="UItitle">Options</b> pane. If you add a catalog group as a base layer, all of the image catalogs in the group are treated as a single image catalog and excluded from the list of available layers. </p>
+        <h3>Changing the Default Base Layer</h3>
+        <p>By default, you can change the base layer to one of the following available layers:</p>
+        <ul>
+            <li value="1">MODIS</li>
+            <li value="2">Open Street Map</li>
+            <li value="3">Google Maps</li>
+            <li value="4">OpenLayers&#160;WMS</li>
+        </ul>
+        <p>If you want to set a custom base layer as the default, first add the base layer to the list of available layers. If for any reason ExpressZip cannot render the default base layer, it attempts to render the next base layer in the list of available base layers.</p>
+        <p>To change the default base layer, complete the following steps:</p>
+        <ol>
+            <li value="1">
+                <p>Open the following file in a text editor with administrator or root privileges:</p><pre xml:space="preserve">&lt;Express Server Installation Directory&gt;\ImageServer\Tomcat\conf\ExpressZip.properties</pre>
+            </li>
+            <li value="2">
+                <p>Edit the value of the <code>defaultBaseLayerName</code> line. </p>
+                <p>For example, you might enter the following line:</p><pre xml:space="preserve">defaultBaseLayerName="Open&#160;Street Map"</pre>
+            </li>
+            <li value="3">Save the file.</li>
+            <li value="4">Restart Tomcat. For more information, see <a href="restarting_tomcat.htm" class="MCXref_0">Restarting Tomcat</a>.</li>
+        </ol>
+        <script type="text/javascript" src="SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

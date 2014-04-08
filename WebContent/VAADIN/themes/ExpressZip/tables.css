@@ -1,0 +1,59 @@
+.v-table-expresszip {
+	border-radius: 5px;
+}
+
+.v-table-expresszip .v-table-header-wrap {
+	height: auto;
+	color: #FFFFFF;
+	font-size: 19px;
+	font-weight: normal;
+	text-transform: none;
+	text-shadow: none;
+}
+
+.v-table-expresszip .v-table-header {
+	height: auto;
+	background-size: 100% 100%;
+	background-image: url('img/gradient-normal.png');
+}
+
+.v-table-expresszip .v-table-resizer {
+	height: 32px;
+}
+
+.v-table-expresszip .v-table-body {
+	border: 1px solid #aaa;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.v-table-expresszip .v-table-caption-container {
+	vertical-align: middle;
+}
+
+.v-table-expresszip .v-table-row, .v-table-expresszip .v-table-row-odd {
+	height: 32px;
+}
+
+.v-table-expresszip  .v-selected .v-table-cell-content-greenbar {
+	background-image: url('img/green-selected.png');
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.v-table-expresszip .v-selected {
+	text-shadow: none;
+	background: #EFF9F4;
+	color: #808080;
+}
+
+.v-table-expresszip .v-selected .v-table-cell-content {
+	border-right-color: #d3d4d5;
+}
+
+.v-table-expresszip .v-table-row:hover, .v-table-row-odd:hover {
+	background-color: #EFF9F4;
+}
+
+.v-table-expresszip .v-table-cell-content {
+	vertical-align: middle;
+}

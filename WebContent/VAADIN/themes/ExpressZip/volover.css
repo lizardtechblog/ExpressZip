@@ -1,0 +1,95 @@
+@CHARSET "UTF-8";
+
+.olControlNavToolbar {
+	top: 4px !important;
+	left: 40px !important;
+}
+
+.olControlNavToolbar div {
+	width: 30px !important;
+	height: 30px !important;
+	background-image: url("img/openlayers-nav-sprites.png") !important;
+	position: absolute !important;
+	top: 0px !important;
+}
+
+.olControlNavToolbar .olControlZoomToMaxExtentItemInactive {
+	background-position: 0px 0px !important;
+	left: 0px !important;
+}
+
+.olControlNavToolbar .olControlZoomToMaxExtentItemInactive:hover {
+	background-position: 0px -30px !important;
+	left: 0px !important;
+}
+
+.olControlNavToolbar .olControlZoomToMaxExtentItemActive {
+	background-position: 0px 0px !important;
+	left: 0px !important;
+}
+
+.olControlNavToolbar .olControlDrawFeatureItemInactive {
+	background-position: -90px 0px !important;
+	background-color: transparent !important;
+	left: 105px !important;
+}
+
+.olControlNavToolbar .olControlDrawFeatureItemInactive:hover {
+	background-position: -90px -30px !important;
+	background-color: transparent !important;
+	left: 105px !important;
+}
+
+.olControlNavToolbar .olControlDrawFeatureItemActive {
+	background-position: -90px -60px !important;
+	background-color: transparent !important;
+	left: 105px !important;
+}
+
+.olControlNavToolbar .olControlTransformFeatureItemInactive {
+	background-position: -120px 0px !important;
+	background-color: transparent !important;
+	left: 140px !important;
+}
+
+.olControlNavToolbar .olControlTransformFeatureItemInactive:hover {
+	background-position: -120px -30px !important;
+	background-color: transparent !important;
+	left: 140px !important;
+}
+
+.olControlNavToolbar .olControlTransformFeatureItemActive {
+	background-position: -120px -60px !important;
+	background-color: transparent !important;
+	left: 140px !important;
+}
+
+.olControlNavToolbar .olControlNavigationItemInactive {
+	background-position: -30px 0px !important;
+	left: 35px !important;
+}
+
+.olControlNavToolbar .olControlNavigationItemInactive:hover {
+	background-position: -30px -30px !important;
+	left: 35px !important;
+}
+
+.olControlNavToolbar .olControlNavigationItemActive {
+	background-position: -30px -60px !important;
+	left: 35px !important;
+}
+
+.olControlNavToolbar .olControlZoomBoxItemInactive {
+	background-position: -60px 0px !important;
+	left: 70px !important;
+}
+
+.olControlNavToolbar .olControlZoomBoxItemInactive:hover {
+	background-position: -60px -30px !important;
+	left: 70px !important;
+}
+
+.olControlNavToolbar .olControlZoomBoxItemActive {
+	background-position: -60px -60px !important;
+	left: 70px !important;
+}

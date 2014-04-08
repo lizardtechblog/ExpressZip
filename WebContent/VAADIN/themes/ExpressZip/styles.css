@@ -1,0 +1,140 @@
+@import url(../reindeer/styles.css);
+@import url('tables.css');
+@import url('volover.css');
+@import url('buttons.css');
+@import url('header.css');
+
+.v-app, .v-window, .v-contextmenu, .v-window .v-filterselect-input, .v-app .v-textfield, .v-app .v-filterselect-input, .v-filterselect-suggestmenu {
+	background-color: #ffffff;
+	color: #808080;
+	font-family: Arial,sans-serif;
+	font-size: 14px;
+}
+
+input[type=text]:disabled {
+	color:#202020;
+}
+.v-app .v-textfield-focus, .v-window .v-textfield-focus {
+	border-color: #552691;
+}
+
+.v-panel-caption, .v-label-step {
+	font-weight: normal;
+	color: #552691;
+	font-family: Open Sans,Arial,sans-serif;
+	font-size: 19px;
+	border: none;
+	padding-bottom: 7px;
+}
+
+.v-panel-nocaption {
+	border: none;
+}
+
+.v-panel-content {
+	border: none;
+}
+
+.v-panel-deco {
+	border: none;
+	background: none;
+}
+
+.v-webkit .v-panel-deco {
+	background: none;
+}
+
+.invisible {
+	display: none;
+}
+
+.v-treetable-node-closed {
+	background:url("img/treenode-closed.png") right center no-repeat;
+	left: -5px;
+}
+
+.v-treetable-node-open {
+	background:url("img/treenode-open.png") right center no-repeat;
+	left: -5px;
+}
+
+input[type=radio], input[type=checkbox] {
+	display: none;
+}
+
+.v-radiobutton, .v-checkbox {
+	margin: 2px;
+}
+
+.v-radiobutton label, .v-checkbox label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 27px;
+}
+
+.v-radiobutton label:before, .v-checkbox label:before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 0;
+	margin-left: 6px;
+}
+
+.v-radiobutton-disabled label, .v-checkbox.v-disabled label {
+	cursor: default;
+}
+
+.v-radiobutton label:before {
+	background-image:url("img/radio-unselected.png");
+}
+
+.v-radiobutton input[type=radio]:checked + label:before {
+	background-image:url("img/radio-selected.png");
+}
+
+.v-radiobutton-disabled input[type=radio] + label:before {
+	background-image:url("img/radio-unselected-disabled.png");
+}
+
+.v-radiobutton-disabled input[type=radio]:checked + label:before {
+	background-image:url("img/radio-selected-disabled.png");
+}
+
+.v-checkbox label:before {
+	background-image:url("img/LayerChooseLayer16px.png");
+}
+
+.v-checkbox input[type=checkbox]:checked + label:before {
+	background-image:url("img/LayerChosen16px.png");
+}
+
+.v-checkbox.v-disabled input[type=checkbox] + label:before {
+	background-image:url("img/checkbox-unselected-disabled.png");
+}
+
+.v-checkbox.v-disabled input[type=checkbox]:checked + label:before {
+	background-image:url("img/checkbox-selected-disabled.png");
+}
+
+.v-link span, .v-label a {
+	text-decoration: none;
+}
+
+.v-link a:link span, .v-label a:link {
+	color: #552691;
+}
+
+.v-link a:visited span, .v-label a:visited {
+	color: #895bc4;
+}
+
+.v-link a:hover span, .v-label a:hover {
+	text-decoration: underline;
+}
+
+.filter-flow {
+	float: left;
+	margin-right: 6px;
+}

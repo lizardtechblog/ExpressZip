@@ -1,0 +1,158 @@
+/*************************************
+	Styles for ExpressZip's menu:
+**************************************/
+
+.expresszip-button {
+	height: 34px;
+	width: 92px;
+	vertical-align: middle;
+	border: none;
+	border-radius: 3px;
+}
+
+.expresszip-button .v-nativebutton-caption {
+	color: #ffffff;
+	font-family: Arial,sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.expresszip-action {
+	background-image: url('img/gradient-green-normal.png'); /* #8ac53e -> #599f01 */
+}
+
+.expresszip-action:hover {
+	background-image: url('img/gradient-green-hover.png'); /* #98da43 -> #5ba104 */
+}
+
+.expresszip-action.v-disabled {
+	opacity: 1.0;
+	filter: none;
+	background-image: url('img/gradient-green-disabled.png'); /* #dbf2bd -> #c6dea7 */
+}
+
+.expresszip-step {
+	background-image: url('img/gradient-purple-normal.png'); /* #895bc4 -> #562792 */
+}
+
+.expresszip-step:hover {
+	background-image: url('img/gradient-purple-hover.png'); /* #996fdc -> #7455a7 */
+}
+
+.expresszip-step.v-disabled {
+	opacity: 1.0;
+	filter: none;
+	background-image: url('img/gradient-purple-disabled.png'); /* #d5c8eb -> #c3b7d9 */
+}
+
+.expresszip-menu {
+	background: #442c82;
+}
+
+.expresszip-menu:hover {
+	background: #552691;
+}
+
+.expresszip-menu.v-disabled {
+	opacity: 1.0;
+	filter: none;
+	background: #c4b3d9;
+}
+
+.v-accordion-item-caption, .v-accordion-item-open .v-accordion-item-caption, .v-window-outerheader, .v-window-header {
+	color: #ffffff;
+	font-family: Arial Regular,Arial,sans-serif;
+	font-size: 19px;
+	font-weight: normal;
+	height: 32px;
+	background-image: url('./img/gradient-hover.png');
+	background-position: left;
+	background-size: 100% 100%;
+	padding-top: 5px;
+	text-shadow: none;
+}
+
+ .v-accordion-item-open .v-accordion-item-caption, .v-window-outerheader, .v-window-header {
+	background-image: url('./img/gradient-dark.png');
+}
+
+.shapefile {	
+	vertical-align: middle;
+}
+
+.shapefile .v-upload .v-button {
+	background: transparent;
+	padding: 0px;
+}
+
+.shapefile .v-upload .v-button-wrap {
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-image: url('img/UploadShapefileStandard23px.png');
+}
+
+.shapefile .v-upload .v-button-wrap:hover {
+	background-image: url('img/UploadShapefileHover23px.png');
+}
+
+.shapefile .v-button-wrap img:hover {
+	content:url('img/RemoveShapefileHover23px.png');
+}
+
+.v-filterselect {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-app .v-filterselect-input,.v-window .v-filterselect-input,.v-popupview-popup .v-filterselect-input {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-focus {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-focus .v-filterselect-input {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-button {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-button:hover {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-button:active {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-focus .v-filterselect-button {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-focus .v-filterselect-button:hover {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-focus .v-filterselect-button:active {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-disabled .v-filterselect-button:hover,.v-readonly .v-filterselect-button:hover {
+	background-image: url('img/VerticalSprites.png');
+}
+
+.v-filterselect-suggestmenu .gwt-MenuItem-selected, 
+.v-ie .v-filterselect-suggestmenu .gwt-MenuItem-selected,
+.v-contextmenu .gwt-MenuItem-selected,
+.v-ie .v-contextmenu .gwt-MenuItem-selected {
+	background: #552691;
+	background-image: none;
+	color: #fff;
+	text-shadow: none;
+}
+
+.v-ie9 .v-caption {
+	width: auto !important;
+}
