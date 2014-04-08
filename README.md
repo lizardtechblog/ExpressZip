@@ -19,7 +19,7 @@ http://demo.lizardtech.com:8080/ExpressZip
 
 ###Documentation
 
-For complete instructions on building and deploying ExpressZip, see the documentation in the /doc directory.
+http://demo.lizardtech.com:8080/ExpressZip/doc/
 
 ###Building ExpressZip
 
