@@ -5,7 +5,7 @@ This is an example of changing styles for the ExpressZip application. For inform
 
 You can view the result of the style changes in the following figure:
 
-![Custom Style Example](https://raw.githubusercontent.com/lizardtechblog/ExpressZip/styles/ExpressZip_CustomStyles.png)
+![Custom Style Example](ExpressZip_CustomStyles.png)
 
 The styling information for ExpressZip is contained in the following directory:
 ```
