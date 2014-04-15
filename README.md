@@ -1,58 +1,20 @@
 README
 =======
 
-###Overview
+This is an example of changing styles for the ExpressZip application. For information on building and deploying ExpressZip, see the main branch. 
 
-ExpressZip is a web application that you can use to view and export LizardTech Express Server
-imagery. The following list describes some of the features of ExpressZip:
-- Easily view Express Server imagery.
-- Use filters and location search to find imagery.
-- Select multiple layers that you want to export.
-- Select an area of interest that you want to export.
-- Use shapefiles to select a region that you want to export.
-- Create image tiles.
-- Select multiple output formats including JPEG, GeoTIFF, PNG, GIF, and BMP.
+You can view the result of the style changes in the following figure:
 
-###Demo
+![Custom Style Example](https://raw.githubusercontent.com/lizardtechblog/ExpressZip/styles/ExpressZip_CustomStyles.png)
 
-http://demo.lizardtech.com:8080/ExpressZip
-
-###Documentation
-
-http://demo.lizardtech.com:8080/ExpressZip/doc/
-
-###Building ExpressZip
-
-The ExpressZip application is a Java web application for Tomcat. Before you can build the ExpressZip
-application from the source code, you must install the Java SDK and Maven.
-
-To compile ExpressZip, run the following command:
+The styling information for ExpressZip is contained in the following directory:
 ```
-mvn package
+WebContent/VAADIN/themes/ExpressZip
 ```
-Maven builds the project, prints a build success or failure message, and creates a WAR file in the
-target directory.
-
-###Deploying ExpressZip
-
-The WAR file created by maven is a JAR file packaged for use as a web application. To deploy the web
-application in Tomcat, complete the following steps:
-
-1. Move a copy of the WAR file created by Maven to the Tomcat webapps directory. 
-2. In the Tomcat server.xml file, ensure that the unpackWARs and autoDeploy properties are set to true.
-3. Restart Tomcat.
-When Tomcat starts, the ExpressZip application is extracted from the WAR file and deployed.
-4. Configure an export directory and base layer in the ExpressZip.properties file.
-
-###Accessing ExpressZip
-
-By default, you can access ExpressZip via HTTPS and HTTP. To access ExpressZip, open a web browser and navigate to one of the following URLs:
-
-- For HTTP:
+To change the logo, you can either replace the ExpZip_Logo161x33px.png file with your own logo, or you can edit the embedded logo line in following file:
 ```
-http://<Tomcat Server name>:8080/ExpressZip
+/src/com/lizardtech/expresszip/vaadin/MapToolbarViewComponent.java
 ```
-- For HTTPS
+For example, you might change the line to point to the following custom logo file:
 ```
-https://<Express Server name>:8443/ExpressZip
-```
+Embedded logo = new Embedded(null, new ThemeResource("img/Custom_Logo.png"));
