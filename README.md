@@ -11,7 +11,7 @@ The styling information for ExpressZip is contained in the following directory:
 ```
 WebContent/VAADIN/themes/ExpressZip
 ```
-To change the logo, you can either replace the ExpZip_Logo161x33px.png file with your own logo, or you can edit the embedded logo line in following file:
+To change the logo, you can either replace the ExpZip_Logo161x33px.png file with your own logo, or you can edit the embedded logo line in the following file:
 ```
 /src/com/lizardtech/expresszip/vaadin/MapToolbarViewComponent.java
 ```
