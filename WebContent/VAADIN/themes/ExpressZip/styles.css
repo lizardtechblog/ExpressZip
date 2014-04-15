@@ -15,12 +15,12 @@ input[type=text]:disabled {
 	color:#202020;
 }
 .v-app .v-textfield-focus, .v-window .v-textfield-focus {
-	border-color: #552691;
+	border-color: #8ac53e;
 }
 
 .v-panel-caption, .v-label-step {
 	font-weight: normal;
-	color: #552691;
+	color: #8ac53e;
 	font-family: Open Sans,Arial,sans-serif;
 	font-size: 19px;
 	border: none;
@@ -123,11 +123,11 @@ input[type=radio], input[type=checkbox] {
 }
 
 .v-link a:link span, .v-label a:link {
-	color: #552691;
+	color: #599f01;
 }
 
 .v-link a:visited span, .v-label a:visited {
-	color: #895bc4;
+	color: #9BE046;
 }
 
 .v-link a:hover span, .v-label a:hover {

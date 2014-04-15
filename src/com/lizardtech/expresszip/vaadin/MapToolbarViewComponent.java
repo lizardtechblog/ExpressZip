@@ -68,7 +68,7 @@ public class MapToolbarViewComponent extends CustomComponent implements com.liza
 		btnJobQueueStatus.setStyleName(Button.STYLE_LINK);
 		btnJobQueueStatus.addListener(this);
 
-		Embedded logo = new Embedded(null, new ThemeResource("img/ExpZip_Logo161x33px.png"));
+		Embedded logo = new Embedded(null, new ThemeResource("img/Custom_Logo.png"));
 		hznToolbar.addComponent(logo);
 		hznToolbar.setComponentAlignment(logo, Alignment.MIDDLE_LEFT);
 		hznToolbar.setExpandRatio(logo, 0.35f);

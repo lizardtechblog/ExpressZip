@@ -46,17 +46,17 @@
 }
 
 .expresszip-menu {
-	background: #442c82;
+	background: #519102;
 }
 
 .expresszip-menu:hover {
-	background: #552691;
+	background: #6AAA1C;
 }
 
 .expresszip-menu.v-disabled {
 	opacity: 1.0;
 	filter: none;
-	background: #c4b3d9;
+	background: #D9F1BB;
 }
 
 .v-accordion-item-caption, .v-accordion-item-open .v-accordion-item-caption, .v-window-outerheader, .v-window-header {
@@ -147,7 +147,7 @@
 .v-ie .v-filterselect-suggestmenu .gwt-MenuItem-selected,
 .v-contextmenu .gwt-MenuItem-selected,
 .v-ie .v-contextmenu .gwt-MenuItem-selected {
-	background: #552691;
+	background: #519102;
 	background-image: none;
 	color: #fff;
 	text-shadow: none;
